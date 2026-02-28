@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Aoi 💕</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="heart_icon_header.png">
+    <link href="arial" rel="stylesheet">
+<base target="_blank">
+</head>
+<body>
+    <audio id="bgMusic" loop autoplay>
+        <source src="wiege.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="giftOverlay" class="gift-overlay">
+        <div class="gift-content">
+            <div class="gift-box">
+                <div class="gift-lid">
+                    <div class="gift-bow">🎀</div>
+                </div>
+                <div class="gift-body">
+                    <span class="gift-icon">😛</span>
+                </div>
+            </div>
+            <h1 class="gift-title">A SPECIAL GIFT FOR MY CUTIE PIEEEE</h1>
+            <p class="gift-subtitle">MY DEAREST AOI</p>
+            <button class="open-gift-btn" onclick="openGift()">
+                <span class="btn-text">Open Your Gift Twin</span>
+                <span class="btn-sparkles">✨</span>
+            </button>
+            <p class="gift-hint">Press on the button to open your gift (●'◡'●)</p>
+        </div>
+        <div class="floating-hearts-overlay"></div>
+    </div>
+
+    <div id="mainContent" class="main-content hidden">
+        <div class="music-control">
+            <button id="musicToggle" class="music-btn" onclick="toggleMusic()">🎶</button>
+            <div class="music-wave">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+
+        <section class="hero">
+            <div class="floating-hearts"></div>
+            <div class="hero-content">
+                <h1 class="title">HAPPPYYY BIRTHDAYYY</h1>
+                <h2 class="subtitle">MY AMAZING AOI</h2>
+                <div class="date-badge">WE'VE BEEN TOGETHER SINCE JUNE 1, 2025 WHICH'S</div>
+                <div class="countdown" id="countdown">
+                    <div class="time-unit">
+                        <span id="days">00</span>
+                        <label>Days</label>
+                    </div>
+                    <div class="time-unit">
+                        <span id="hours">00</span>
+                        <label>Hours</label>
+                    </div>
+                    <div class="time-unit">
+                        <span id="minutes">00</span>
+                        <label>Minutes</label>
+                    </div>
+                    <div class="time-unit">
+                        <span id="seconds">00</span>
+                        <label>Seconds</label>
+                    </div>
+                </div>
+                <p class="hero-text">LONG OF ENDLESS LOVE AND BEAUTIFUL MEMORIESS o(≧▽≦)o</p>
+            </div>
+            <div class="scroll-indicator">↓ scroll down buddy there's more 💔 ↓</div>
+        </section>
+
+        <section class="gallery-section">
+            <h2 class="section-title">OUR BEST MOMENTS AHHAHHAHAH</h2>
+            <div class="gallery-container">
+                <div class="gallery-grid">
+                    <div class="photo-card" onclick="openModal(0)">
+                        <img src="photo1.png" alt="our first minecraft gaming experience" class="gallery-img">
+                        <div class="photo-caption-overlay">our first minecraft gaming experience, kinda freaky 👅</div>
+                    </div>
+                    <div class="photo-card" onclick="openModal(1)">
+                        <img src="photo2.png" alt="WIEGEEE" class="gallery-img">
+                        <div class="photo-caption-overlay">lowkey us just like the song 💗</div>
+                    </div>
+                    <div class="photo-card" onclick="openModal(2)">
+                        <img src="photo3.png" alt="shitsaken" class="gallery-img">
+                        <div class="photo-caption-overlay">when we were playing forsaken together 💔</div>
+                    </div>
+                    <div class="photo-card" onclick="openModal(3)">
+                        <img src="photo4.png" alt="LOL" class="gallery-img">
+                        <div class="photo-caption-overlay">WHEN WE WERE MATCHING AVATARS BECAUSE OUR MAINS GOT BANNED 😭</div>
+                    </div>
+                    <div class="photo-card" onclick="openModal(4)">
+                        <img src="photo5.png" alt="USSSSS" class="gallery-img">
+                        <div class="photo-caption-overlay">THIS IS USSSSSSSSSSS 💗💗💗💗💗</div>
+                    </div>
+                    <div class="photo-card" onclick="openModal(5)">
+                        <img src="photo6.png" alt="this is gonna be us in the future trust" class="gallery-img">
+                        <div class="photo-caption-overlay">this is us in the future TRUST MEEE 👅</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="letter-section">
+            <h2 class="section-title">a very secret message for Aoi 🤔</h2>
+            <p class="instruction">SCRATCH THE CARD BELOW NOWWW 👅👅👅</p>
+
+            <div class="scratch-container">
+                <div class="scratch-card">
+                    <canvas id="scratchCanvas" width="700" height="550"></canvas>
+                    <div class="hidden-message">
+                        <div class="message-content">
+                            <h3>my amazing and elegant queen Aoi (❁´◡`❁)</h3>
+                            <p>every moment with you feels like a dream, always grateful to have you in my life</p>
+                            <p>you're always my first thought in the morning and last at night</p>
+                            <p>HAPPY BIRTHDAY TO THE ONE WHO HOLDS MY HEART COMPLETELY AHHH ╰(*°▽°*)╯</p>
+                            <p class="signature">I'M GLAD I'M YOURS HAHAHAH<br>❤️</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="reset-btn" onclick="resetScratch()">Reset Card</button>
+            </div>
+        </section>
+
+        <section class="timeline-section">
+            <h2 class="section-title">our lovely story meoww</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">August 23, 2024</div>
+                    <div class="timeline-content">
+                        <h3>THE BEGINNINGGG (≧▽≦)</h3>
+                        <p>the day our paths crossed 😛😛😛</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">June 1, 2025</div>
+                    <div class="timeline-content">
+                        <h3>THE BEST DAY EVERRRRRRRRRRRR</h3>
+                        <p>THIS WHEN WE STARTED DATING AND I WAS HONESTLY SHOCKED SOMEONE AS AMAZING LIKE YOU DECIDED TO STAY WITH ME 😭</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">a real special moment</div>
+                    <div class="timeline-content">
+                        <h3>this is when i knew</h3>
+                        <p>living on this stupid big giant rock is worth it, and just you being in my life makes it 100x better 🤤 also don't forget the promise i made to you that i'll be working on myself to get to vietnammm 😘</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>made with love for my highness</p>
+            <p class="copyright">EVERY DAYY I LOVE YOU MOREEEE 💗💗💗💗💗</p>
+        </footer>
+
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <div class="modal-placeholder">
+                    <span>Replace with your photo</span>
+                </div>
+                <p class="modal-caption" id="modalCaption"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- im too creativie to come up with ts -->
+    <section class="game-section">
+        <h2 class="section-title">mix our love potion and do some witchcraft :3</h2>
+        <p class="game-intro">create our perfect love recipe.. DONT BURN MY WEBSITE PLEASE 😭...</p>
+
+        <div class="recipe-game">
+            <div class="cauldron-container">
+                <div class="cauldron">
+                    <div class="cauldron-body">🍯</div>
+                    <div class="bubbles">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="mixture" id="mixture"></div>
+                </div>
+                <p class="cauldron-text">CLICK ON uhh THE INGREDIENTS TO ADD THEM INTO THE POT</p>
+            </div>
+
+            <div class="ingredients">
+                <button class="ingredient-btn" onclick="addIngredient('love')" data-ingredient="love">
+                    <span class="ingredient-emoji">💕</span>
+                    <span class="ingredient-name">OUR LOVEEE</span>
+                </button>
+                <button class="ingredient-btn" onclick="addIngredient('heart')" data-ingredient="heart">
+                    <span class="ingredient-emoji">💗</span>
+                    <span class="ingredient-name">HEARTS</span>
+                </button>
+                <button class="ingredient-btn" onclick="addIngredient('sparkle')" data-ingredient="sparkle">
+                    <span class="ingredient-emoji">✨</span>
+                    <span class="ingredient-name">SPARKLESSSS</span>
+                </button>
+            </div>
+
+            <button class="brew-btn" onclick="brewPotion()" id="brewBtn" disabled>
+                BREW!!!!!! 🍯
+            </button>
+
+            <div class="recipe-result" id="recipeResult">
+                <div class="love-letter-popup">
+                    <div class="letter-paper">
+                        <div class="wax-seal">💌</div>
+                        <h3>my secret recipe for my darling</h3>
+                        <p>my awesome wife aoi</p>
+                        <p>you are the perfect blend of everything beautiful in this world</p>
+                        <p>you’re the mix of <strong>cuteness</strong> with <strong>care</strong> and <strong>everything pure ever</strong>...</p>
+                        <p>and your birthday gift is that you get the coolest person in your life… meow (me)</p>
+                        <p class="letter-close">happy birthday, my radiant queen (p≧w≦q)</p>
+                        <p class="signature">meowooeooww <br>❤️</p>
+                    </div>
+                    <button class="close-letter-btn" onclick="closeLetter()">Close Letter</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="added-ingredients" id="addedIngredients">
+            <p>Current mixture: <span id="mixList">Empty :(...</span></p>
+        </div>
+    </section>
+
+    <!-- THE LAST THING IN THE WEBSITE I OWULD'VE MADE MORE IF I HAD MROE TIME -->
+    <section class="secret-section">
+        <div class="secret-container">
+            <div class="mystery-box" onclick="toggleSecretPuzzle()">
+                <span class="mystery-icon">🔐</span>
+                <span class="mystery-text">A secret button???</span>
+            </div>
+
+            <div class="secret-puzzle" id="secretPuzzle">
+                <div class="puzzle-frame">
+                    <p class="puzzle-riddle">
+                        "in the language of our statues, there's a number we share,<br>
+                        type it here if you uhh know it.<br>
+                        what digits bind our moments? (￣y▽,￣)╭ "
+                    </p>
+                    <div class="puzzle-input-container">
+                        <input type="text" id="secretCode" class="puzzle-input" placeholder="Enter the sacred number..." maxlength="10">
+                        <button class="puzzle-submit" onclick="checkSecretCode()">🔓 Unlock</button>
+                    </div>
+                    <p class="puzzle-hint">* the code i just told you to memorize</p>
+                    <div class="puzzle-message" id="puzzleMessage"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
