@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>another secret portal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Playfair Display', serif;
+            background: linear-gradient(135deg, #fdfbf7 0%, #f5f0e1 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            color: #2c1810;
+        }
+
+        .letter-container {
+            max-width: 600px;
+            width: 100%;
+            background: white;
+            padding: 4rem 3rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            position: relative;
+            animation: fadeIn 1.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .letter-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                repeating-linear-gradient(
+                    0deg,
+                    transparent,
+                    transparent 2px,
+                    rgba(139, 69, 19, 0.02) 2px,
+                    rgba(139, 69, 19, 0.02) 4px
+                );
+            pointer-events: none;
+        }
+
+        .salutation {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2rem;
+            color: #8b0000;
+            margin-bottom: 2rem;
+        }
+
+        .letter-body {
+            font-size: 1.15rem;
+            line-height: 2.2;
+            text-align: justify;
+            margin-bottom: 3rem;
+        }
+
+        .letter-body p {
+            margin-bottom: 1.8rem;
+            text-indent: 2rem;
+        }
+
+        .letter-body p:first-child {
+            text-indent: 0;
+        }
+
+        .closing {
+            text-align: right;
+            margin-top: 3rem;
+        }
+
+        .closing-text {
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .signature {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.2rem;
+            color: #8b0000;
+        }
+
+        .heart-divider {
+            text-align: center;
+            margin: 2rem 0;
+            font-size: 1.5rem;
+            color: #c44569;
+            letter-spacing: 10px;
+        }
+
+        .date {
+            text-align: right;
+            font-style: italic;
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .letter-container {
+                padding: 3rem 2rem;
+            }
+
+            .salutation {
+                font-size: 1.6rem;
+            }
+
+            .letter-body {
+                font-size: 1rem;
+                line-height: 2;
+            }
+
+            .signature {
+                font-size: 1.8rem;
+            }
+        }
+
+        .reveal-button {
+            display: block;
+            margin: 2rem auto;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, #ff6b9d, #c44569);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.3rem;
+            cursor: pointer;
+            box-shadow: 0 5px 20px rgba(255, 107, 157, 0.4);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .reveal-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px rgba(255, 107, 157, 0.6);
+        }
+
+        .reveal-button:active {
+            transform: scale(0.98);
+        }
+
+        #hiddenContent {
+            animation: fadeInUp 0.8s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+<base target="_blank">
+</head>
+
+    <!-- hate my life, had to spend hours on this -->
+
+<body>
+    <div class="letter-container">
+        <h1 class="salutation">my dear faggot aoi</h1>
+
+        <div class="letter-body">
+            <p>i can't believe you actually found you way in. i thought you'd take days just to give up at the end and then beg me for hints :wink: im awesome right, but wow you never disappoint me cutie 😛💗</p>
+            
+            <p>anyway, sorry for the late.. uhh appearance there were some silly bugs in my code and i had to fix them... okay i lied i only fixed them today because yesterday i was busy.. uhmmm.. playing meow...</p>
+
+            <p>you wont find the letter here because I LIEDDDD!! send me this code "9988351" in my dms and i will... probably send you another website hehheeh!</p>
+            
+            <div id="hiddenContent" style="display: none;">
+                <p>well this letter was originally supposed to be hidden and i didnt really like the idea of exposing it to you at firs tbut i thought i'd turn it into a puzzle because.. why not?</p>
+                <p>you know we've been together for almost a year now, and im really grateful for it. im not going to repeat the same words from the last letter, but you're actually amazing for showing me that "love" really exists in this world. i didnt support it at first especially... online dating because you know how people say it always fails and stuff but you showed me there was actually a chance for us to be.. real. and it all started because my dumbass thought it was a good idea to hate on you just to get your attention it worked though.. you cant lie!!</p>
+                <p>but really.. im dying inside waiting for us to finally be together. watching you spend time with your friends ESPECIALLY THAT FAG VIVIAN hurts me sometimes, like why can't it be me instead? 💔 for the first time i never thought i'd hate distance this much. if it wasn't for that stupid distance, we'd be having the best time of our lives right now.. hanging out together, going to dinner, me treating you to food cus you're a fatty and just spending time together. i really want that but its not happening anytime soon unless some miracle happens and i suddenly become a millionaire</p>
+                <p>you changed me in ways i didnt expect 😭 i used to be so detached, so "whatever happens, happens" now i actually care about a future that includes someone else. i think about plans. i think about stability. i think about becoming better not just for me, but because i want to be someone you're proud to stand next to. that alone says everything about how much you mean to me</p>
+                <p> its crazy how natural it feels. i dont have to pretend around you. i dont have to filter every thought or calculate every word (unless it was a boundary that's an exception) i can be loud, annoying, dramatic, insecure and you still love me for that I NEVER KNEW I NEEDED THIS COMFORT SO BADLY UNTIL YOU GAVE IT TO ME 😭😭😭</p>
+                <P>even on the days where we argue or misunderstand each other, i'd still rather go through that with you than have peace with someone else. because at least with you, it matters and its not something temporary its actually something worth fighting for. and that's why im still holding onto this like its the most important thing i've ever had (it is)</P>
+                <p>either way ill still try to figure out a way to get to vietnam because that's my second top priority right after getting into a good college :33</p>
+            </div>
+            
+            <button id="revealBtn" class="reveal-button" onclick="revealMore()">
+                hell naw im not doing this REVEAL IT NOW!!!
+            </button>
+        </div>
+        <div class="heart-divider">💗 </div>
+
+        <div class="closing">
+            <p class="closing-text">I LOVEEE YOUUUU</p>
+            <p class="signature">your autistic husband</p>
+        </div>
+    </div>
+
+    <script>
+        function revealMore() {
+            const hiddenContent = document.getElementById('hiddenContent');
+            const revealBtn = document.getElementById('revealBtn');
+            
+            hiddenContent.style.display = 'block';
+            
+            revealBtn.textContent = 'man... i guess you can see this now';
+            revealBtn.style.background = 'linear-gradient(135deg, #00b894, #00cec9)';
+            
+            setTimeout(() => {
+                revealBtn.style.display = 'none';
+            }, 2000);
+    }
+    </script>
+</body>
+
+</html>
